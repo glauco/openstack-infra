@@ -1,0 +1,8 @@
+- name: Ensure git is present in the latest version
+  hosts: "{{ node }}"
+  user: "{{ user }}"
+  sudo: yes
+
+  tasks:
+  - name: ensures git is present
+    apt: name=git update_cache=yes state=latest

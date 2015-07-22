@@ -1,0 +1,4 @@
+---
+  - include: git.yaml
+  - include: mysql.yaml
+  - include: puppet_apply.yaml

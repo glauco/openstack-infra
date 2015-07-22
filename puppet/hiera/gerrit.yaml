@@ -1,0 +1,115 @@
+gerrit::mysql_host: localhost
+gerrit::mysql_password: 12345
+gerrit::war: http://tarballs.openstack.org/ci/gerrit/gerrit-v2.10.2.23.039a170.war
+gerrit::mysql::mysql_root_password: '12345'
+gerrit::mysql::database_name: 'reviewdb'
+gerrit::mysql::database_user: 'gerrit2'
+gerrit::mysql::database_password: '12345'
+gerrit::ssh_rsa_key_contents:
+                              |
+                              -----BEGIN RSA PRIVATE KEY-----
+                              MIIEpAIBAAKCAQEA46EoWzeFWmjTVRYS0ESiQ9LivVHYQLRvL+9FbRrU79ceVujw
+                              EtLWBbCEZkJx0bMbca9jyxbZXe+igfQvoJSFmyR4XzRbe9CwbMhqOIqjLu2mJPoL
+                              qTKJIa9t8BCKVKK7c3Wdo5umxH68OGYENkfr35C6YK34yZ9o8LZw32aySt5/26kZ
+                              nCZTQIYCI3UrXnYKwsaYHPiXAJ+D8vaFR22i2olAqIrxRsD9R0mS+BSgpI4ZUB4D
+                              ZDjOytJbJjJKSiOwm7wqVBi6Zb7BZkwcfokL2jOcptehVo/WYGT81up9VWpNGquT
+                              nQMWADwhNUnJSj4OrfMKMxReuuiCytBuOal6cwIDAQABAoIBAQCosO3va53v+m9j
+                              RxB6N+Lo0IgoNVdF3HHp3DBfQts7QvjA/6+qw4TIgqAcCHHBLjLQdWJHR4+fBdAw
+                              7n29S1QYPVbXdz207FtSwtO1Q0jbplLSZFvv7/ugcxnOJvPc9Rxl3GwOq3NTe3iR
+                              c0j70SEEdYUp0MPm57Qlb48GgFzxDb1y1ex3qgnz9wd8bdjsr4zc9IN/wXszVel5
+                              tUYXpGr0QWBewbleVRa6irprEw10foZtJ2nV8CudwLpiqRr/mZFiAa2H4HLuPrMA
+                              Izk7H9rU4ArItA4TzJLXxGvjGdymnmNXEYbCw4MnyHiorEn8vOjA7agGb3CMgyH0
+                              1+6ROSEBAoGBAPPpRpHp5ZQCBaVkJK5P/W3OQLat0vJy+2QhhBxMtacllrZ5lVbj
+                              ZbQ+NZ/7TTM9YV6asP42/dexz83u1OCaKV4XBR4UJ0hh8Cmtqs6JdQOaLHIXInIO
+                              vC8ZC5c8P7TsUN4XcdsSx18z2Jo6XC1nJWAXwV7JpF9+UM0LEu2jbIdxAoGBAO7p
+                              TRIE3gYjd30n8kzC3Ks57Hjgw0AACUJbASYTVNVUp+Dr8aN+/AtDAjZs1PXcK0e9
+                              fcQgO2u+lF3i4nbXCw7HPU/rs+htuT/OxwmR77HIC7jflFetkDwF/kDWIqq40ooZ
+                              ACGZZtIFdvbYUxevnZDJGUqoWr/23rp4zeM2A1YjAoGAPZ30we/Am39XRczip1Z1
+                              w0OTfZKz86Owdj8xTKTkTvFj/X0BiQ2xJ7N/gIbPnd4ntuqFQ/NIdTDqOi/Xf1Xy
+                              lV5jYJHeyp5TOXQx7jMzaFGOYNQPU5j9WTiOgQorXd1FIJXzoVBBJX/HfE658o5Y
+                              FsppgzSVXbpfVy0w/u+F/0ECgYEAzTDk96fkhMMrWfvYF+N4oTsThVINf8dILIx6
+                              tRf/UWXu9bfPhouGr6lymgno8eyR44C1JqBESKqbRPOba1QQdDXcy+p1TxgF9e6D
+                              dg24HyngH30vLAquiU7gaxE/Hv+0G9WTDkhxTcpRvXpYC0zSeEqvhTaJErxV2TPu
+                              KMn4HZ8CgYAgxSSwhAQcY4LU0tqMo/21I0UI5Xu0p8ARJ2VivAm6fTsSJYgE7Qv8
+                              ct3fehIzeMiSWki6ZjF1OJQ2fixf7FNgKVR6PSlADXMXkFEsd9K+9Yiu675A+Njf
+                              7FxJEsN8QRn4trLK0GDZYbrnv8C8OEUlh3jeIq6wZ9wDfYKuGSg0zg==
+                              -----END RSA PRIVATE KEY-----
+
+gerrit::ssh_dsa_key_contents:
+                              |
+                              -----BEGIN DSA PRIVATE KEY-----
+                              MIIBuwIBAAKBgQDQ5l85wDBD1//IY3Tz1SkQsfM+ya9kehLsOS3d557wwmtuTtdj
+                              3tcSUFap0Jyj4ImvrVZnign5Jskqhfd6W7g1kpObe5C3SbJNqMId/Iur2F+Lu0jw
+                              +BFyMeaW4/2YQ1gpZpGGzGpCk1mKYbMn3GAdto8uH2NGQfHWCKYl4mhM+QIVALYF
+                              cg2dCbbkDO52vkknvCwYCcV5AoGADahbLhtQWc2NAaQ2CQ5aIq9bdfk9+FWv8ZP5
+                              6jwZnZJFiAMaHpgUYl3gepp/0r29RhmYrzLKCp9oWhHCxot6tWeTElhGVbUjSXg/
+                              c4MBsvZtH+KSBbRuFM57zU21v8yG7E0mM6WXJ2hHBnMPN/zE38ncw2oDbE3O4XQ2
+                              MDttBjwCgYAurYd29xrkcPxAyneU8M2Leb4EBme6S1ajmUl3GliEk1Yg9gULucEM
+                              dslAUOLFTc9CWTzKjWJmAim3xgGjzG+DvuNy4+Ry1CK4u7+sLnc8l8w/S2r+818e
+                              ODcHe0dsep78rsWyf+WXcgcPDFBPpHpdRXUMhjVzqdofjdMMM6jLWwIVAKbfIs6i
+                              Lb4kCViQ+J+bMx4Riteq
+                              -----END DSA PRIVATE KEY-----
+
+gerrit::ssh_rsa_pubkey_contents: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDjoShbN4VaaNNVFhLQRKJD0uK9UdhAtG8v70VtGtTv1x5W6PAS0tYFsIRmQnHRsxtxr2PLFtld76KB9C+glIWbJHhfNFt70LBsyGo4iqMu7aYk+gupMokhr23wEIpUortzdZ2jm6bEfrw4ZgQ2R+vfkLpgrfjJn2jwtnDfZrJK3n/bqRmcJlNAhgIjdStedgrCxpgc+JcAn4Py9oVHbaLaiUCoivFGwP1HSZL4FKCkjhlQHgNkOM7K0lsmMkpKI7CbvCpUGLplvsFmTBx+iQvaM5ym16FWj9ZgZPzW6n1Vak0aq5OdAxYAPCE1SclKPg6t8wozFF666ILK0G45qXpz gerrit2@vagrant-ubuntu-trusty-64
+gerrit::ssh_dsa_pubkey_contents: ssh-dss AAAAB3NzaC1kc3MAAACBANDmXznAMEPX/8hjdPPVKRCx8z7Jr2R6Euw5Ld3nnvDCa25O12Pe1xJQVqnQnKPgia+tVmeKCfkmySqF93pbuDWSk5t7kLdJsk2owh38i6vYX4u7SPD4EXIx5pbj/ZhDWClmkYbMakKTWYphsyfcYB22jy4fY0ZB8dYIpiXiaEz5AAAAFQC2BXINnQm25Azudr5JJ7wsGAnFeQAAAIANqFsuG1BZzY0BpDYJDloir1t1+T34Va/xk/nqPBmdkkWIAxoemBRiXeB6mn/Svb1GGZivMsoKn2haEcLGi3q1Z5MSWEZVtSNJeD9zgwGy9m0f4pIFtG4UznvNTbW/zIbsTSYzpZcnaEcGcw83/MTfydzDagNsTc7hdDYwO20GPAAAAIAurYd29xrkcPxAyneU8M2Leb4EBme6S1ajmUl3GliEk1Yg9gULucEMdslAUOLFTc9CWTzKjWJmAim3xgGjzG+DvuNy4+Ry1CK4u7+sLnc8l8w/S2r+818eODcHe0dsep78rsWyf+WXcgcPDFBPpHpdRXUMhjVzqdofjdMMM6jLWw== gerrit2@vagrant-ubuntu-trusty-64
+
+gerrit::ssh_project_rsa_key_contents:
+                              |
+                              -----BEGIN RSA PRIVATE KEY-----
+                              MIIEowIBAAKCAQEA4rbYk6VU7lybM/7FHPZEuFReC/pnR9c1GnCzhLKBBrp6q1Ho
+                              RhBKa7aSnpUVOIaBRP+plpeAH6xuj5acde9bQ9fF9yyPVqDg3u5u3eBxMuCdOz6a
+                              IsaxD6/gTEhzYDJN6MCwAg01AohWHygkNuRxUESXaj+sqe1fss3psn8fgBAQ0vPq
+                              sC66VmGa9xRVunfZpmEs5mNMzrS5gGDr5L/G26cXiAdwUA6rCESQKAxx2CWYLgpC
+                              NdfTIWe16nRC32CC7FfJ36w7d5IqKrfUtcurGAOlMgS3tKl5ZSbD8WwaHVrHgyjr
+                              sTG9xMgsdOqhLf1fWxljd0d2Lb44sJFwHIgv/wIDAQABAoIBABgC34s7nnQkULfA
+                              CuZXWs3e+ZrxKVEdhN1JBGpQcYPh6i4M3bnV7dvcmUi8Z2P2Mui43yA46XPxUkBY
+                              5jdDY3oa9zeHe6LkJQzXWdyb8cE+sshch/yY6JXNvca2gam1ijTVe46sEWo0QFLK
+                              cJNzvGCQ8yxolAPnRRRt5ItoFVD9r5KVpFgxftFJrwN4q1XxK4DdCGEmsALgw+oO
+                              cBl4PgNAAosihHJADajeSz1/gRm8PUkZ/yQEnIrgvJwNqh1OVn1TZpsPgj4z8Um6
+                              SvesAfSSWDUMAy9/uq7bTcVfTRxorgJ82gLFkaa6y184RLMyZl2q688fFXLWxnC4
+                              JdqD5XECgYEA8WUrDgmEnbJjXiu+UQhA/RILSQlrnGKKEMpw2FWvw9PY9JwCdxnf
+                              jHqB62LVaqFvasugwbBXmvXJyTsAPr8Z92mbqNAE0cNETKeyHxX20TSK9jgEADvP
+                              ckmHBpLxTRAP47PtHBwJSHq8KcyrwPC6lbd+Qak8RMg68v2FdI2CFwkCgYEA8G5L
+                              BauTZFkHoZ/v723tMPcDQ8mHMTHTvDDtYNSllrBkspK5o26YdWCnrb2NiC6opAWt
+                              +8gVISNFbQsh6PHl2N2BmXb+caUHLkJiEvAWltCv8Ps/qoteplgTFZp8CYM/9RBy
+                              V2WrTQomfPVXxkHLMcrNIHm8GKa/0pvAnGowCMcCgYEAythnkJkg7l77ryN0/qS/
+                              76jdANfArJ4FRMzIfJGsbBM1yX7bd3evaV18lO7tRXg4pvZLtNbZFucZVFaXAyMU
+                              z9nXqsh6dEXwu7VjMUoEqJHNf89cVVHtJS1yIG0UBdzMbVxBkBBjIJu6SCmr3iqr
+                              r6mMl+J9OZNELfIp1eIfgfkCgYAzWJqU/2textSmY62uCF/bUSVVWLiSfP2m9xv6
+                              ze7/G3Sl3kfe60OL7bRhmlWbe7twK/ZYCwbYKNwuyW3YfbCEe+mtiIgWZRP/gRXI
+                              zZVFaBPq9v1FwrXX+H864d8TeQAzqeuBVqkarsxBa3PvVyW54IGmKdlNum7E35Zm
+                              0RapCQKBgAs1/99pVU24unslcAry7McjFFtuOJCguTSXt6u2Yw30Euq9gJDeCbmo
+                              xS1XPiorQjD4OHv+kUMCo9SCoROa6SHfaKx/l1HOrugBkITFmqiGWMp4z62w79Ml
+                              zE/AKhLMdquJB/fKEwtPUrKGoZWVCcOJrU+f2GMZTE779p6VsOFc
+                              -----END RSA PRIVATE KEY-----
+gerrit::ssh_project_rsa_pubkey_contents: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDittiTpVTuXJsz/sUc9kS4VF4L+mdH1zUacLOEsoEGunqrUehGEEprtpKelRU4hoFE/6mWl4AfrG6Plpx171tD18X3LI9WoODe7m7d4HEy4J07PpoixrEPr+BMSHNgMk3owLACDTUCiFYfKCQ25HFQRJdqP6yp7V+yzemyfx+AEBDS8+qwLrpWYZr3FFW6d9mmYSzmY0zOtLmAYOvkv8bbpxeIB3BQDqsIRJAoDHHYJZguCkI119MhZ7XqdELfYILsV8nfrDt3kioqt9S1y6sYA6UyBLe0qXllJsPxbBodWseDKOuxMb3EyCx06qEt/V9bGWN3R3YtvjiwkXAciC// vagrant@vagrant-ubuntu-trusty-64
+gerrit::ssh_replication_rsa_key_contents:
+                              |
+                              -----BEGIN RSA PRIVATE KEY-----
+                              MIIEpAIBAAKCAQEAyhkUVt25vHO1rTDHv7nXOCQfpZA4R9/5nQ+C+urOiDYuMLcP
+                              LI5btOXEAEOyCC+vehrs3gVmXIf3NxH+eeIczJpk9qoC9PLTlk09mN0R+abExgGR
+                              ANUYP/yLGaIUmnRaB2PDQQjbaJY4YcYRonVealzHbb4yPMCk4bdT3ARTGEIAcd7R
+                              pp7kRNpO9I8FrxJO+DWapinDYLNtcbJd731FYAR909SDHmk5oUtlOEr08BmVOQ8u
+                              j2p17Wn/YDfpUqO2rnO1sDtbKEnL1L5BRQZRPh2xAJtE0dTGPLaD/RMmjmLp/Ml3
+                              SG8dm9jgavrKQpuRW4lM2lt6iG7qIsYKGhLHVQIDAQABAoIBAQDAA6ISgmnlRl7X
+                              5V/zpqN4QMIcsPD4QTJNap58vjlqq2epe1Qcdkllj2RxB+CP7JahwhFJRQIjaj+V
+                              ADCzJwVL1GmW/qL+jfRAerTKl0hr1Wph4r0deFmo+c5DlX5T3bZoDP5HvR2RuiBp
+                              rSG2JCOHlQ0aFLpwhGxj1KYFhcpZYTPbI9DFv3vW7u8jXiMe0sAXJV8Fr2mOIcmU
+                              uVvbJIJwqKguHXgf2zH8WUQKE1J8buc4fCP1EhjOnmhxFkc1Wd0p1VuuuoCH4wVS
+                              wac7KgBaWexPvvW6h/J6Px+QxKZ+i2iAHlvc200W76Xj9WRI9e3yAys32RyvwNxX
+                              IiehYhnFAoGBAOn/5q3kncgk2nWVOpdkmjhvHmGcEVyPM5QqHgOaUnPGu9iZP02i
+                              e63BJlHbINQ/+AaAXAR9pdlCYFXhL4Gz8r064DQ//cps6xrPvb/kAyLpgvAdgMEm
+                              LPo46QH8SFBfmIvEnLP3T6FH4wgJ6icXKJ6uKFu53f7b5HtW5yvxlxojAoGBAN0Z
+                              V7+7JUVLSujI1WOJK+Wzm7BnQqPyi3sae4v9yJrfSGdNBPyYJZFnLzd46RFXaDQw
+                              P18AessqDmofR/sqI5Vx1s1DZs8i2pTTMX76i3xcrZKIhICdIagY9hds9NMWDZRv
+                              /Jg/9i3rfQ0RQ1IhQZNOmpkj7QZ7LYuSUoIQ+cQnAoGBAKN7eNPG5IE/Vi1OLBg3
+                              XhPNdmFloy+SkMuUPVHxEGf40aZ7MqHvwg7b4gTQXnhLlOId7avpiORoHlwBrqok
+                              aZPRPXDjwFEblYou13foOlS65hMR2bGYFVZgSlJryq30i+QiYgTN5SFd0vz7yE61
+                              PFjYfjPPgIydXlzZkzq9V/8XAoGALyFB1Tr9XOIJ28lDw23wD4zTuSypxezj0p/4
+                              igTVCD5kXrDKSVXdXDtUk0yQ0gOB0O4f9A5UHo6ed/ynCWEYKLkVgrfFaI4Tbfn+
+                              6QRbS20uCrhTFl9oVz7K5n9xSLXAu02L2KB5x5wVEf4GDbHNGqt8xPwlgGYtdT0B
+                              nXwk4a0CgYBBDATG7vooU0pKzExrjlFtp9KCXI8xZM1sGA7lnWoPQLNMq3qUEUOB
+                              XmJ2Ap2afM3c5SRKi8adkNBALfH9SqX6VhjMk7ZUBmyY0FAWjVOGYQhJMOLfnC1w
+                              0glwFL3alGdBEg2tldzhtqlVI49XnIepCvDkx2Ajla5jgDNOcfxCLg==
+                              -----END RSA PRIVATE KEY-----
+gerrit::ssh_replication_rsa_pubkey_contents: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDKGRRW3bm8c7WtMMe/udc4JB+lkDhH3/mdD4L66s6INi4wtw8sjlu05cQAQ7IIL696GuzeBWZch/c3Ef554hzMmmT2qgL08tOWTT2Y3RH5psTGAZEA1Rg//IsZohSadFoHY8NBCNtoljhhxhGidV5qXMdtvjI8wKTht1PcBFMYQgBx3tGmnuRE2k70jwWvEk74NZqmKcNgs21xsl3vfUVgBH3T1IMeaTmhS2U4SvTwGZU5Dy6PanXtaf9gN+lSo7auc7WwO1soScvUvkFFBlE+HbEAm0TR1MY8toP9EyaOYun8yXdIbx2b2OBq+spCm5FbiUzaW3qIbuoixgoaEsdV vagrant@vagrant-ubuntu-trusty-64

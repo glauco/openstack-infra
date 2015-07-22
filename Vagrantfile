@@ -20,7 +20,26 @@ Vagrant.configure(2) do |config|
       ansible.verbose = "-vvvv"
       ansible.extra_vars = {
         node: "gerrit",
-        user: "vagrant",
+        ansible_ssh_user: "vagrant"
+      }
+    end
+
+    g.vm.provider "virtualbox" do |vb|
+      vb.memory = "2048"
+    end
+  end
+
+  config.vm.define :gerrit2 do |g|
+    g.vm.network :private_network, ip: "192.168.33.11"
+  
+    g.vm.provision "ansible" do |ansible|
+      ansible.playbook = "playbooks/main.yaml"
+      ansible.limit = "gerrit2"
+      ansible.sudo = true
+      ansible.inventory_path = "hosts"
+      ansible.verbose = "-vvvv"
+      ansible.extra_vars = {
+        node: "gerrit2",
         ansible_ssh_user: "vagrant"
       }
     end

@@ -1,0 +1,7 @@
+- name: Ensure mysql server is present
+  hosts: "{{ node }}"
+  sudo: yes
+
+  tasks:
+  - name: ensures mysql-server is present
+    apt: name=mysql-server state=latest

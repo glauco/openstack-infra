@@ -9,26 +9,6 @@ Vagrant.configure(2) do |config|
   config.vm.box = "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box" 
   config.vm.network "forwarded_port", guest: 8080, host: 8080
 
-  config.vm.define :gerrit do |g|
-    g.vm.network :private_network, ip: "192.168.33.10"
-  
-    g.vm.provision "ansible" do |ansible|
-      ansible.playbook = "playbooks/git.yaml"
-      ansible.limit = "gerrit"
-      ansible.sudo = true
-      ansible.inventory_path = "hosts"
-      ansible.verbose = "-vvvv"
-      ansible.extra_vars = {
-        node: "gerrit",
-        ansible_ssh_user: "vagrant"
-      }
-    end
-
-    g.vm.provider "virtualbox" do |vb|
-      vb.memory = "2048"
-    end
-  end
-
   config.vm.define :gerrit2 do |g|
     g.vm.network :private_network, ip: "192.168.33.11"
   

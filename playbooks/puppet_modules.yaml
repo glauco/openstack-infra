@@ -1,0 +1,15 @@
+---
+- name: Ensure puppet modules are installed
+  hosts: "{{ node }}"
+  sudo: yes
+
+  tasks:
+  - name: Make sure script is executable
+    command: bash -lc "chmod +x /vagrant/install_modules.sh"
+    register: command_result
+    failed_when: "command_result.rc != 0"
+
+  - name: Execute install modules script
+    command: bash -lc "MODULE_ENV_PATH=/vagrant/ MODULE_ENV_FILE=modules.env /vagrant/install_modules.sh"
+    register: command_result
+    failed_when: "command_result.rc != 0"

@@ -4,4 +4,4 @@
 
   tasks:
   - name: ensures mysql-server is present
-    apt: name=mysql-server state=latest
+    apt: name=mysql-server update_cache=yes state=latest

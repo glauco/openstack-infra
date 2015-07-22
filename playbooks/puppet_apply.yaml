@@ -5,3 +5,5 @@
   tasks:
   - name: ensure puppet-apply is executed
     command: bash -lc "puppet apply --debug /vagrant/puppet/init.pp --modulepath=/vagrant/puppet/modules/ --hiera_config=/vagrant/puppet/hiera/hiera.yaml --verbose"
+    register: command_result
+    failed_when: "command_result.rc != 0"

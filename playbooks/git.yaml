@@ -4,4 +4,4 @@
 
   tasks:
   - name: ensures git is present
-    apt: name=git state=latest
+    apt: name=git update_cache=yes state=latest

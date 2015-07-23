@@ -7,25 +7,48 @@
 # you're doing.
 Vagrant.configure(2) do |config|
   config.vm.box = "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box"
-  config.vm.network "forwarded_port", guest: 8080, host: 8080
 
-  config.vm.define :gerrit2 do |g|
-    g.vm.network :private_network, ip: "192.168.33.11"
-
+  config.vm.define :gerrit do |g|
+    g.vm.hostname = "gerrit"
+    g.vm.network :private_network, ip: "192.168.33.10"
+  
     g.vm.provision "ansible" do |ansible|
-      ansible.playbook = "playbooks/main.yaml"
-      ansible.limit = "gerrit2"
+      ansible.playbook = "playbooks/gerrit.yaml"
+      ansible.limit = "gerrit"
       ansible.sudo = true
       ansible.inventory_path = "hosts"
       ansible.verbose = "-vv"
       ansible.extra_vars = {
-        node: "gerrit2",
+        node: "gerrit",
+	puppet_file: "gerrit",
         ansible_ssh_user: "vagrant"
       }
     end
 
     g.vm.provider "virtualbox" do |vb|
       vb.memory = "2048"
+    end
+  end
+
+  config.vm.define :zuul do |g|
+    g.vm.hostname = "zuul"
+    g.vm.network :private_network, ip: "192.168.33.11"
+  
+    g.vm.provision "ansible" do |ansible|
+      ansible.playbook = "playbooks/zuul.yaml"
+      ansible.limit = "zuul"
+      ansible.sudo = true
+      ansible.inventory_path = "hosts"
+      ansible.verbose = "-vvvv"
+      ansible.extra_vars = {
+        node: "zuul",
+	puppet_file: "zuul",
+        ansible_ssh_user: "vagrant"
+      }
+    end
+
+    g.vm.provider "virtualbox" do |vb|
+      vb.memory = "1024"
     end
   end
 end

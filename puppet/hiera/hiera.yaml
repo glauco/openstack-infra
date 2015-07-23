@@ -4,6 +4,7 @@
 
 :hierarchy:
   - "gerrit"
+  - "zuul"
 
 :yaml:
   :datadir: '/vagrant/puppet/hiera'

@@ -1,0 +1,1 @@
+zuul::server::layout_dir: /vagrant/confs/zuul/layout

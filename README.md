@@ -12,5 +12,5 @@ The idea is to get the minimal OpenStack Infra setup running locally.
 - Bundler
 
 ## How to setup:
-1. vagrant up gerrit2
+1. vagrant up gerrit
 2. run rake spec to make sure that everything is up and running.

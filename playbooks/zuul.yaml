@@ -1,0 +1,4 @@
+---
+  - include: git.yaml
+  - include: puppet_modules.yaml
+  - include: puppet_apply.yaml

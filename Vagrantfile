@@ -6,18 +6,18 @@
 # backwards compatibility). Please don't change it unless you know what
 # you're doing.
 Vagrant.configure(2) do |config|
-  config.vm.box = "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box" 
+  config.vm.box = "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box"
   config.vm.network "forwarded_port", guest: 8080, host: 8080
 
   config.vm.define :gerrit2 do |g|
     g.vm.network :private_network, ip: "192.168.33.11"
-  
+
     g.vm.provision "ansible" do |ansible|
       ansible.playbook = "playbooks/main.yaml"
       ansible.limit = "gerrit2"
       ansible.sudo = true
       ansible.inventory_path = "hosts"
-      ansible.verbose = "-vvvv"
+      ansible.verbose = "-vv"
       ansible.extra_vars = {
         node: "gerrit2",
         ansible_ssh_user: "vagrant"
